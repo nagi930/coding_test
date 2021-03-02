@@ -32,13 +32,15 @@ from itertools import zip_longest
 
 def solution(participant, completion):
     participant_dict = defaultdict(int)
-    for i, j in zip_longest(participant, completion):
+    for i in participant:
         participant_dict[i] += 1
-        participant_dict[j] -= 1
+
+    for i in completion:
+        participant_dict[i] -= 1
 
     '''
     @@@ shorter way @@@
-    for i, j in zip(participant, completion):
+    for i, j in zip_longest(participant, completion):
         participant_dict[i] += 1
         participant_dict[j] -= 1
     '''
