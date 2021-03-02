@@ -28,14 +28,13 @@ participant	completion	return
 
 
 from collections import defaultdict
+from itertools import zip_longest
 
 def solution(participant, completion):
     participant_dict = defaultdict(int)
-    for i in participant:
+    for i, j in zip_longest(participant, completion):
         participant_dict[i] += 1
-
-    for i in completion:
-        participant_dict[i] -= 1
+        participant_dict[j] -= 1
 
     '''
     @@@ shorter way @@@
