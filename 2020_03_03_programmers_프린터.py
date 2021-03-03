@@ -40,3 +40,4 @@ def solution(priorities, location):
             count += 1
             if popped[0] == location:
                 return count
+
