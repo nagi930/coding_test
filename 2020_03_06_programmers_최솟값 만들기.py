@@ -45,7 +45,7 @@ def solution(A,B):
 # list comprehension, enumerate, brute force : 효율성 TEST Fail
 '''
 def solution(A,B):
-    return sum([x*y for i, x in enumerate(sorted(A)) 
+    return sum([x * y for i, x in enumerate(sorted(A)) 
                     for j, y in enumerate(sorted(B, reverse=True))
                     if i == j])
 '''
