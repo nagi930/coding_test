@@ -35,7 +35,7 @@ def solution(priorities, location):
     while True:
         popped = stack.pop(0)
         if any(popped[1] < temp[1] for temp in stack):
-                stack.append(popped)
+            stack.append(popped)
         else:
             count += 1
             if popped[0] == location:

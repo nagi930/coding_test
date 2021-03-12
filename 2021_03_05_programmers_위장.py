@@ -54,3 +54,5 @@ def solution(clothes):
         a = list(combinations(clothes_dict[key], 1))
         count += (count * len(a))
     return count-1
+
+
