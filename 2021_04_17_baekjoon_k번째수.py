@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1300
+
 n = int(input())
 k = int(input())
 
