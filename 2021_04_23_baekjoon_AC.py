@@ -12,12 +12,12 @@ for _ in range(n):
     for idx, query in enumerate(queries):
 
         if query == 'D':
-            if reverse == True:
+            if reverse is True:
                 count[1] += 1
             else:
                 count[0] += 1
         elif query == 'R':
-            if reverse == True:
+            if reverse is True:
                 reverse = False
             else:
                 reverse = True
@@ -31,6 +31,6 @@ for _ in range(n):
             except IndexError:
                 print('error')
                 break
-            if reverse == True:
+            if reverse is True:
                 nums = reversed(nums)
             print(f"[{','.join(list(map(str, nums)))}]")
